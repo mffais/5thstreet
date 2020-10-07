@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="45f0f79e-25e8-4edb-9a70-96a2ecfa951c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/second-doesnt-mean-second-best/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/second-doesnt-mean-second-best/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sponsors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sponsors/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iZ0G9WNdP3pIJuUNMHq9nUikCn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tedxyouthalamitosbay-2017/photos/index.html" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45f0f79e-25e8-4edb-9a70-96a2ecfa951c" name="Default Changelist" comment="" />
+      <created>1602099709173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602099709173</updated>
+      <workItem from="1602099711604" duration="3152000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1602102736962">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602102736962" />
+    <state x="301" y="74" key="SettingsEditor" timestamp="1602100950821">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="74" key="SettingsEditor/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602100950821" />
+  </component>
+</project>
