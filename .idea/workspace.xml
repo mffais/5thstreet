@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45f0f79e-25e8-4edb-9a70-96a2ecfa951c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/photos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/photos/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/second-doesnt-mean-second-best/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/second-doesnt-mean-second-best/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sponsors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sponsors/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sss/sss.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sss/sss.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/5thstreet/tedxyouthalamitosbay-2017/second-doesnt-mean-second-best/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602099709173</updated>
       <workItem from="1602099711604" duration="3152000" />
+      <workItem from="1602531940251" duration="2776000" />
     </task>
     <servers />
   </component>
@@ -47,6 +58,70 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="184" key="FileChooserDialogImpl/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602102736962" />
+    <state width="1579" height="258" key="GridCell.Tab.0.bottom" timestamp="1602534759917">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.0.bottom/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759917" />
+    <state width="1579" height="258" key="GridCell.Tab.0.center" timestamp="1602534759917">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.0.center/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759917" />
+    <state width="1579" height="258" key="GridCell.Tab.0.left" timestamp="1602534759917">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.0.left/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759917" />
+    <state width="1579" height="258" key="GridCell.Tab.0.right" timestamp="1602534759917">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.0.right/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759917" />
+    <state width="1579" height="258" key="GridCell.Tab.1.bottom" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.1.bottom/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
+    <state width="1579" height="258" key="GridCell.Tab.1.center" timestamp="1602534759917">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.1.center/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759917" />
+    <state width="1579" height="258" key="GridCell.Tab.1.left" timestamp="1602534759917">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.1.left/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759917" />
+    <state width="1579" height="258" key="GridCell.Tab.1.right" timestamp="1602534759917">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.1.right/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759917" />
+    <state width="1579" height="258" key="GridCell.Tab.2.bottom" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.2.bottom/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
+    <state width="1579" height="258" key="GridCell.Tab.2.center" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.2.center/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
+    <state width="1579" height="258" key="GridCell.Tab.2.left" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.2.left/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
+    <state width="1579" height="258" key="GridCell.Tab.2.right" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.2.right/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
+    <state width="1579" height="258" key="GridCell.Tab.3.bottom" timestamp="1602534759919">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.3.bottom/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759919" />
+    <state width="1579" height="258" key="GridCell.Tab.3.center" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.3.center/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
+    <state width="1579" height="258" key="GridCell.Tab.3.left" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.3.left/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
+    <state width="1579" height="258" key="GridCell.Tab.3.right" timestamp="1602534759918">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="258" key="GridCell.Tab.3.right/1600.0.1600.860/0.0.1600.860/-1600.0.1600.860@0.0.1600.860" timestamp="1602534759918" />
     <state x="301" y="74" key="SettingsEditor" timestamp="1602100950821">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

@@ -276,611 +276,808 @@
     <!-- END GADWP Universal Tracking -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="../sss/sss.min.js"></script>
+    <link rel='stylesheet' id='slider-css' href='../sss/sss.css'
+          type='text/css' media='all'/>
+    jQuery(function($) {
+    $('.slider').sss();
 
-</head>
+    $('.section').click(function(e) {
+    e.preventDefault();
 
-<body class="post-template-default single single-post postid-551 single-format-standard themify-fw-3-1-1 themify-ultra-1-7-2 skin-default not-ie default_width sidebar1 no-home no-touch header-top-bar fixed-header footer-block default tagline-off rss-off search-off single-gallery-layout tile_enable  filter-hover-none filter-featured-only masonry-enabled">
+    var loc = $(this).attr('href').substring(1);
+    var lock = $('#' + loc).offset().top;
+    $('body,html').animate({scrollTop:lock});
+    });
+    });
+    </script>
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
 
-<script type="text/javascript">
-    function themifyMobileMenuTrigger() {
-        if (document.body.clientWidth <= tf_mobile_menu_trigger_point) {
-            jQuery('body').addClass('mobile_menu_active');
-        } else {
-            jQuery('body').removeClass('mobile_menu_active');
-        }
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
     }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+    }
+    </style>
+    </head>
+
+    <body class    = "post-template-default single single-post postid-551 single-format-standard themify-fw-3-1-1 themify-ultra-1-7-2 skin-default not-ie default_width sidebar1 no-home no-touch header-top-bar fixed-header footer-block default tagline-off rss-off search-off single-gallery-layout tile_enable  filter-hover-none filter-featured-only masonry-enabled" >
+
+        < script
+    type = "text/javascript" >
+        function themifyMobileMenuTrigger() {
+            if (document.body.clientWidth <= tf_mobile_menu_trigger_point) {
+                jQuery('body').addClass('mobile_menu_active');
+            } else {
+                jQuery('body').removeClass('mobile_menu_active');
+            }
+        }
 
     themifyMobileMenuTrigger();
     jQuery(window).resize(themifyMobileMenuTrigger);
-</script>
+    </script>
 
-<div id="pagewrap" class="hfeed site">
+    <div id="pagewrap" class="hfeed site">
 
-    <div id="headerwrap">
-        <div style="top:0px; left:0px; background-color:yellow; color:black; width:100%;">
-            These pages were formerly located at: www.tedxyouthalamitosbay.com
-        </div>
-
-        <div class="header-icons">
-            <a id="menu-icon" href="#mobile-menu"></a>
-        </div>
-
-        <header id="header" class="pagewidth clearfix" itemscope="itemscope" itemtype="../schema.org/WPHeader">
-
-
-            <div class="header-bar">
-                <div id="site-logo"><a href="../index.html" title="TEDxYouth@AlamitosBay"><img
-                        src="../wp-content/uploads/2016/10/tedx-logo.png" alt="TEDxYouth@AlamitosBay"
-                        title="TEDxYouth@AlamitosBay"/><span style="display: none;">TEDxYouth@AlamitosBay</span></a>
-                </div>
+        <div id="headerwrap">
+            <div style="top:0px; left:0px; background-color:yellow; color:black; width:100%;">
+                These pages were formerly located at: www.tedxyouthalamitosbay.com
             </div>
-            <!-- /.header-bar -->
 
-            <div id="mobile-menu" class="sidemenu sidemenu-off">
+            <div class="header-icons">
+                <a id="menu-icon" href="#mobile-menu"></a>
+            </div>
 
-                <div class="navbar-wrapper clearfix">
+            <header id="header" class="pagewidth clearfix" itemscope="itemscope" itemtype="../schema.org/WPHeader">
 
-                    <div class="social-widget">
-                        <div id="themify-social-links-4" class="widget themify-social-links">
-                            <ul class="social-links horizontal">
-                                <li class="social-link-item twitter font-icon icon-large">
-                                    <a href="../twitter.com/TEDxAlamitosBay" target="_blank"><i
-                                            class="fa fa-twitter"></i> </a>
-                                </li>
-                                <!-- /themify-link-item -->
-                                <li class="social-link-item facebook font-icon icon-large">
-                                    <a href="../www.facebook.com/groups/304636813305802/" target="_blank"><i
-                                            class="fa fa-facebook"></i> </a>
-                                </li>
-                                <!-- /themify-link-item --></ul>
-                        </div>
+
+                <div class="header-bar">
+                    <div id="site-logo"><a href="../index.html" title="TEDxYouth@AlamitosBay"><img
+                            src="../wp-content/uploads/2016/10/tedx-logo.png" alt="TEDxYouth@AlamitosBay"
+                            title="TEDxYouth@AlamitosBay"/><span style="display: none;">TEDxYouth@AlamitosBay</span></a>
                     </div>
-                    <!-- /.social-widget -->
-
-
-                    <nav id="main-nav-wrap" itemscope="itemscope" itemtype="../schema.org/SiteNavigationElement">
-                        <ul id="main-nav" class="main-nav menu-name-main-menu">
-                            <li id='menu-item-549' class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="../about/index.html">About</a></li>
-                            <li id='menu-item-322' class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="../speakers/index.html">Speakers</a></li>
-                            <li id='menu-item-323' class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="../team/index.html">Team</a></li>
-                            <li id='menu-item-15' class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                                    href="../event/index.html">Event Information</a></li>
-                            <li id='menu-item-482' class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="../sponsors/index.html">Sponsors</a></li>
-                            <li id='menu-item-16' class="menu-item menu-item-type-custom menu-item-object-custom"><a
-                                    href="../contact/index.html">Contact</a></li>
-                            <li id='menu-item-484'
-                                class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent"><a
-                                    href="../blog/index.html">Blog</a></li>
-                            <li id='menu-item-692' class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="../photos/index.html">Photos</a></li>
-                            <li id='menu-item-1781' class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="../core-team-photographer-photos/index.html">Core Team Photographer Photos</a>
-                            </li>
-                            <li id='menu-item-1788' class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                    href="../ted-approved/index.html">TED-Approved!</a></li>
-                        </ul>                                    <!-- /#main-nav -->
-
-
-                    </nav>
-                    <!-- /#main-nav-wrap -->
-
                 </div>
+                <!-- /.header-bar -->
 
-                <!-- /header-widgets -->
+                <div id="mobile-menu" class="sidemenu sidemenu-off">
 
-                <a id="menu-icon-close" href="#"></a>
-            </div>
-            <!-- /#mobile-menu -->
+                    <div class="navbar-wrapper clearfix">
 
-
-        </header>
-        <!-- /#header -->
-
-
-    </div>
-    <!-- /#headerwrap -->
-
-    <div id="body" class="clearfix">
-
-
-        <div class="featured-area fullcover">
-
-            <div class="post-content">
-
-
-                <h1 class="post-title entry-title">
-                    <a href="index.html" title="Second Doesn&#8217;t Mean Second-Best">Second Doesn&#8217;t Mean
-                        Second-Best</a>
-                </h1>
-
-
-                <p class="post-meta entry-meta">
-
-                    <span class="post-category"><a href="../category/behind-the-scenes/index.html" rel="tag">Behind the scenes</a></span>
-
-                </p>
-                <!-- /post-meta -->
-
-
-            </div>
-        </div>
-
-        <!-- layout-container -->
-        <div id="layout" class="pagewidth clearfix">
-
-
-            <!-- content -->
-            <div id="content" class="list-post">
-
-
-                <article itemscope itemtype="http://schema.org/Article" id="post-551"
-                         class="post clearfix post-551 type-post status-publish format-standard has-post-thumbnail hentry category-behind-the-scenes has-post-title no-post-date has-post-category no-post-tag no-post-comment no-post-author  cat-4">
-                    <div class="post-content">
-                        <div class="entry-content" itemprop="articleBody">
-
-                            <script>
-                                if (document.getElementById("builder-styles-css")) document.getElementById("builder-styles-css").insertAdjacentHTML("beforebegin", "<link rel='stylesheet' href='../wp-content/themes/themify-ultra/themify/themify-builder/css/themify-builder-style.css' type='text/css' />");
-                            </script>
-                            <p>Our second in-person meeting for TEDxYouth@AlamitosBay was held January 22, 2017 at the
-                                Bayshore Library. Despite the rain (and flash flood warning!), everyone laughed and
-                                participated, making this the best meeting yet! Between the Chinese New Year cookies,
-                                the laughter, and discussion between speakers and TEDx team members, amazing progress
-                                was made. Make sure to get your tickets now, and see our speakers in action on <span
-                                        class="aBn" tabindex="0" data-term="goog_759576166"><span
-                                        class="aQJ">March 25</span></span>!</p>
-
-
-                <!-- module_row test slier -->
-                <div data-gutter="gutter-default"
-                     class="themify_builder_row themify_builder_551_row module_row module_row_0 module_row_551-0 clearfix gutter-default col_align_top"
-                     data-column-alignment="col_align_top">
-
-
-                    <div class="row_inner_wrapper">
-                        <div class="row_inner">
-                            <div class="slider">
-                                <img src="../i0.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-4cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i0.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-8cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/> ->
-                                <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-11cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-1cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-2cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-3cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-5cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-6cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-9cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i2.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-10cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-                                <img src="../i2.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-7cc88.jpg?w=1165"
-                                     alt="Second Doesn&#8217;t Mean Second-Best" data-recalc-dims="1"/>
-
+                        <div class="social-widget">
+                            <div id="themify-social-links-4" class="widget themify-social-links">
+                                <ul class="social-links horizontal">
+                                    <li class="social-link-item twitter font-icon icon-large">
+                                        <a href="../twitter.com/TEDxAlamitosBay" target="_blank"><i
+                                                class="fa fa-twitter"></i> </a>
+                                    </li>
+                                    <!-- /themify-link-item -->
+                                    <li class="social-link-item facebook font-icon icon-large">
+                                        <a href="../www.facebook.com/groups/304636813305802/" target="_blank"><i
+                                                class="fa fa-facebook"></i> </a>
+                                    </li>
+                                    <!-- /themify-link-item --></ul>
                             </div>
-
                         </div>
-                        <!-- /row_inner -->
+                        <!-- /.social-widget -->
+
+
+                        <nav id="main-nav-wrap" itemscope="itemscope" itemtype="../schema.org/SiteNavigationElement">
+                            <ul id="main-nav" class="main-nav menu-name-main-menu">
+                                <li id='menu-item-549' class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a
+                                            href="../about/index.html">About</a></li>
+                                <li id='menu-item-322' class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a
+                                            href="../speakers/index.html">Speakers</a></li>
+                                <li id='menu-item-323' class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a
+                                            href="../team/index.html">Team</a></li>
+                                <li id='menu-item-15' class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                        href="../event/index.html">Event Information</a></li>
+                                <li id='menu-item-482' class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a
+                                            href="../sponsors/index.html">Sponsors</a></li>
+                                <li id='menu-item-16' class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                                        href="../contact/index.html">Contact</a></li>
+                                <li id='menu-item-484'
+                                    class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent">
+                                    <a
+                                            href="../blog/index.html">Blog</a></li>
+                                <li id='menu-item-692' class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a
+                                            href="../photos/index.html">Photos</a></li>
+                                <li id='menu-item-1781'
+                                    class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                        href="../core-team-photographer-photos/index.html">Core Team Photographer
+                                    Photos</a>
+                                </li>
+                                <li id='menu-item-1788'
+                                    class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                        href="../ted-approved/index.html">TED-Approved!</a></li>
+                            </ul>                                    <!-- /#main-nav -->
+
+
+                        </nav>
+                        <!-- /#main-nav-wrap -->
+
                     </div>
-                    <!-- /row_inner_wrapper -->
+
+                    <!-- /header-widgets -->
+
+                    <a id="menu-icon-close" href="#"></a>
                 </div>
-                <!-- /module_row -->
+                <!-- /#mobile-menu -->
 
 
-                <div class="post-nav clearfix">
+            </header>
+            <!-- /#header -->
+
+
+        </div>
+        <!-- /#headerwrap -->
+
+        <div id="body" class="clearfix">
+
+
+            <div class="featured-area fullcover">
+
+                <div class="post-content">
+
+
+                    <h1 class="post-title entry-title">
+                        <a href="index.html" title="Second Doesn&#8217;t Mean Second-Best">Second Doesn&#8217;t Mean
+                            Second-Best</a>
+                    </h1>
+
+
+                    <p class="post-meta entry-meta">
+
+                        <span class="post-category"><a href="../category/behind-the-scenes/index.html" rel="tag">Behind the scenes</a></span>
+
+                    </p>
+                    <!-- /post-meta -->
+
+
+                </div>
+            </div>
+
+            <!-- layout-container -->
+            <div id="layout" class="pagewidth clearfix">
+
+
+                <!-- content -->
+                <div id="content" class="list-post">
+
+
+                    <article itemscope itemtype="http://schema.org/Article" id="post-551"
+                             class="post clearfix post-551 type-post status-publish format-standard has-post-thumbnail hentry category-behind-the-scenes has-post-title no-post-date has-post-category no-post-tag no-post-comment no-post-author  cat-4">
+                        <div class="post-content">
+                            <div class="entry-content" itemprop="articleBody">
+
+                                <script>
+                                    if (document.getElementById("builder-styles-css")) document.getElementById("builder-styles-css").insertAdjacentHTML("beforebegin", "<link rel='stylesheet' href='../wp-content/themes/themify-ultra/themify/themify-builder/css/themify-builder-style.css' type='text/css' />");
+                                </script>
+                                <p>Our second in-person meeting for TEDxYouth@AlamitosBay was held January 22, 2017 at
+                                    the
+                                    Bayshore Library. Despite the rain (and flash flood warning!), everyone laughed and
+                                    participated, making this the best meeting yet! Between the Chinese New Year
+                                    cookies,
+                                    the laughter, and discussion between speakers and TEDx team members, amazing
+                                    progress
+                                    was made. Make sure to get your tickets now, and see our speakers in action on <span
+                                            class="aBn" tabindex="0" data-term="goog_759576166"><span
+                                            class="aQJ">March 25</span></span>!</p>
+
+
+                                <!-- module_row test slier -->
+                                <div data-gutter="gutter-default"
+                                     class="themify_builder_row themify_builder_551_row module_row module_row_0 module_row_551-0 clearfix gutter-default col_align_top"
+                                     data-column-alignment="col_align_top">
+
+
+                                    <div class="row_inner_wrapper">
+                                        <div class="row_inner">
+                                            <div class="slideshow-container">
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">1 / 11</div>
+                                                    <img src="../i0.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-4cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">2 / 11</div>
+                                                    <img src="../i0.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-8cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">3 / 11</div>
+                                                    <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-11cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">4 / 11</div>
+                                                    <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-1cc88.jpg" style="width:100%"/>
+
+                                                </div>
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">5 / 11</div>
+                                                    <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-2cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">6 / 11</div>
+                                                    <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-3cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">7 / 11</div>
+                                                    <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-5cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">8 / 11</div>
+                                                    <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-6cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">9 / 11</div>
+                                                    <img src="../i1.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-9cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">10 / 11</div>
+                                                    <img src="../i2.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-10cc88.jpg" style="width:100%"/>
+
+                                                </div>
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">11 / 11</div>
+                                                    <img src="../i2.wp.com/tedxyouthalamitosbay.com/wp-content/uploads/2017/01/1.22.17-pic-7cc88.jpg" style="width:100%"/>
+
+                                                </div>
+
+                                            </div>
+<br>
+                                            <div style="text-align:center">
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+
+                                            </div>
+
+                                            <script>
+                                                var slideIndex = 0;
+                                                showSlides();
+
+                                                function showSlides() {
+                                                    var i;
+                                                    var slides = document.getElementsByClassName("mySlides");
+                                                    var dots = document.getElementsByClassName("dot");
+                                                    for (i = 0; i < slides.length; i++) {
+                                                        slides[i].style.display = "none";
+                                                    }
+                                                    slideIndex++;
+                                                    if (slideIndex > slides.length) {slideIndex = 1}
+                                                    for (i = 0; i < dots.length; i++) {
+                                                        dots[i].className = dots[i].className.replace(" active", "");
+                                                    }
+                                                    slides[slideIndex-1].style.display = "block";
+                                                    dots[slideIndex-1].className += " active";
+                                                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                                                }
+                                            </script>
+
+
+                                        </div>
+                                        <!-- /row_inner -->
+                                    </div>
+                                    <!-- /row_inner_wrapper -->
+                                </div>
+                                <!-- /module_row -->
+
+
+                                <div class="post-nav clearfix">
                     <span class="prev"><a href="../tedxyouthalamitosbay-meeting/index.html" rel="prev"><span
                             class="arrow"></span> TEDxYouth@AlamitosBay Meeting</a></span> <span class="next"><a
-                        href="../location-location-location/index.html" rel="next"><span class="arrow"></span> Location, Location, Location</a></span>
-                </div>
-                <!-- /.post-nav -->
+                                        href="../location-location-location/index.html" rel="next"><span
+                                        class="arrow"></span> Location, Location, Location</a></span>
+                                </div>
+                                <!-- /.post-nav -->
 
 
-                <div class="related-posts">
-                    <h4 class="related-title">Related Posts</h4>
-                    <article class="post type-post clearfix">
+                                <div class="related-posts">
+                                    <h4 class="related-title">Related Posts</h4>
+                                    <article class="post type-post clearfix">
 
 
-                        <div class="post-content">
-                            <p class="post-meta">
+                                        <div class="post-content">
+                                            <p class="post-meta">
                                 <span class="post-category"><a href="../category/announcement/index.html" rel="tag">Announcement</a>, <a
                                         href="../category/behind-the-scenes/index.html" rel="tag">Behind the scenes</a>, <a
                                         href="../category/news/index.html" rel="tag">News</a></span></p>
-                            <h4 class="post-title">
-                                <a href="../yay-yay-yay/index.html" title="We Did It! We Did It! Yay! Yay! Yay!">
-                                    We Did It! We Did It! Yay! Yay! Yay! </a>
-                            </h4>
-                        </div>
-                        <!-- /.post-content -->
+                                            <h4 class="post-title">
+                                                <a href="../yay-yay-yay/index.html"
+                                                   title="We Did It! We Did It! Yay! Yay! Yay!">
+                                                    We Did It! We Did It! Yay! Yay! Yay! </a>
+                                            </h4>
+                                        </div>
+                                        <!-- /.post-content -->
 
 
-                    </article>
-                    <article class="post type-post clearfix">
+                                    </article>
+                                    <article class="post type-post clearfix">
 
-                        <figure class="post-image clearfix">
-                            <a href="../location-location-location/index.html"><img
-                                    src="../wp-content/uploads/2017/02/Best-Western-Golden-Sails-Hotel-1024x576-394x330.jpg"
-                                    width="394" height="330" class=" wp-image-592"
-                                    alt="Best Western Golden Sails Hotel"/></a>
-                        </figure>
+                                        <figure class="post-image clearfix">
+                                            <a href="../location-location-location/index.html"><img
+                                                    src="../wp-content/uploads/2017/02/Best-Western-Golden-Sails-Hotel-1024x576-394x330.jpg"
+                                                    width="394" height="330" class=" wp-image-592"
+                                                    alt="Best Western Golden Sails Hotel"/></a>
+                                        </figure>
 
-                        <div class="post-content">
-                            <p class="post-meta">
+                                        <div class="post-content">
+                                            <p class="post-meta">
                                 <span class="post-category"><a href="../category/announcement/index.html" rel="tag">Announcement</a>, <a
                                         href="../category/behind-the-scenes/index.html" rel="tag">Behind the scenes</a>, <a
                                         href="../category/news/index.html" rel="tag">News</a></span></p>
-                            <h4 class="post-title">
-                                <a href="../location-location-location/index.html" title="Location, Location, Location">
-                                    Location, Location, Location </a>
-                            </h4>
-                        </div>
-                        <!-- /.post-content -->
+                                            <h4 class="post-title">
+                                                <a href="../location-location-location/index.html"
+                                                   title="Location, Location, Location">
+                                                    Location, Location, Location </a>
+                                            </h4>
+                                        </div>
+                                        <!-- /.post-content -->
 
 
-                    </article>
-                    <article class="post type-post clearfix">
+                                    </article>
+                                    <article class="post type-post clearfix">
 
-                        <figure class="post-image clearfix">
-                            <a href="../tedxyouthalamitosbay-meeting/index.html"><img
-                                    src="../wp-content/uploads/2017/01/TEDx-Meeting-3-1024x683-394x330.jpg" width="394"
-                                    height="330" class=" wp-image-514" alt="TEDx Meeting 3"/></a>
-                        </figure>
+                                        <figure class="post-image clearfix">
+                                            <a href="../tedxyouthalamitosbay-meeting/index.html"><img
+                                                    src="../wp-content/uploads/2017/01/TEDx-Meeting-3-1024x683-394x330.jpg"
+                                                    width="394"
+                                                    height="330" class=" wp-image-514" alt="TEDx Meeting 3"/></a>
+                                        </figure>
 
-                        <div class="post-content">
-                            <p class="post-meta">
+                                        <div class="post-content">
+                                            <p class="post-meta">
                                 <span class="post-category"><a href="../category/behind-the-scenes/index.html"
                                                                rel="tag">Behind the scenes</a></span></p>
-                            <h4 class="post-title">
-                                <a href="../tedxyouthalamitosbay-meeting/index.html"
-                                   title="TEDxYouth@AlamitosBay Meeting">
-                                    TEDxYouth@AlamitosBay Meeting </a>
-                            </h4>
+                                            <h4 class="post-title">
+                                                <a href="../tedxyouthalamitosbay-meeting/index.html"
+                                                   title="TEDxYouth@AlamitosBay Meeting">
+                                                    TEDxYouth@AlamitosBay Meeting </a>
+                                            </h4>
+                                        </div>
+                                        <!-- /.post-content -->
+
+
+                                    </article>
+                                </div>
+                                <!-- /.related-posts -->
+
+
+                            </div>
+                            <!-- /content -->
+
+
+                            <aside id="sidebar" itemscope="itemscope" itemtype="../schema.org/WPSidebar">
+
+
+                                <div id="search-2" class="widget widget_search">
+                                    <form method="get" id="searchform" action="http://www.tedxyouthalamitosbay.com/">
+
+                                        <i class="icon-search"></i>
+
+                                        <input type="text" name="s" id="s" title="Search" value=""/>
+
+                                    </form>
+                                </div>
+                                <div id="recent-posts-2" class="widget widget_recent_entries"><h4 class="widgettitle">
+                                    Recent Posts</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="../post-event-feature-cava-senior-hosts-tedx-talk/index.html">Post-Event
+                                                Feature:
+                                                CAVA Senior Hosts TEDx Talk</a>
+                                        </li>
+                                        <li>
+                                            <a href="../yay-yay-yay/index.html">We Did It! We Did It! Yay! Yay! Yay!</a>
+                                        </li>
+                                        <li>
+                                            <a href="../one-week/index.html">One Week!</a>
+                                        </li>
+                                        <li>
+                                            <a href="../location-location-location/index.html">Location, Location,
+                                                Location</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html">Second Doesn&#8217;t Mean Second-Best</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="categories-2" class="widget widget_categories"><h4 class="widgettitle">
+                                    Categories</h4>
+                                    <ul>
+                                        <li class="cat-item cat-item-6"><a href="../category/announcement/index.html">Announcement</a>
+                                        </li>
+                                        <li class="cat-item cat-item-4"><a
+                                                href="../category/behind-the-scenes/index.html">Behind the
+                                            scenes</a>
+                                        </li>
+                                        <li class="cat-item cat-item-5"><a href="../category/news/index.html">News</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </aside>
+                            <!-- /#sidebar -->
+
+
                         </div>
-                        <!-- /.post-content -->
+                        <!-- /layout-container -->
 
 
-                    </article>
                 </div>
-                <!-- /.related-posts -->
+                <!-- /body -->
+
+                <div id="footerwrap">
 
 
-            </div>
-            <!-- /content -->
+                    <footer id="footer" class="pagewidth clearfix" itemscope="itemscope"
+                            itemtype="../schema.org/WPFooter">
 
 
-            <aside id="sidebar" itemscope="itemscope" itemtype="../schema.org/WPSidebar">
-
-
-                <div id="search-2" class="widget widget_search">
-                    <form method="get" id="searchform" action="http://www.tedxyouthalamitosbay.com/">
-
-                        <i class="icon-search"></i>
-
-                        <input type="text" name="s" id="s" title="Search" value=""/>
-
-                    </form>
-                </div>
-                <div id="recent-posts-2" class="widget widget_recent_entries"><h4 class="widgettitle">Recent Posts</h4>
-                    <ul>
-                        <li>
-                            <a href="../post-event-feature-cava-senior-hosts-tedx-talk/index.html">Post-Event Feature:
-                                CAVA Senior Hosts TEDx Talk</a>
-                        </li>
-                        <li>
-                            <a href="../yay-yay-yay/index.html">We Did It! We Did It! Yay! Yay! Yay!</a>
-                        </li>
-                        <li>
-                            <a href="../one-week/index.html">One Week!</a>
-                        </li>
-                        <li>
-                            <a href="../location-location-location/index.html">Location, Location, Location</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Second Doesn&#8217;t Mean Second-Best</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="categories-2" class="widget widget_categories"><h4 class="widgettitle">Categories</h4>
-                    <ul>
-                        <li class="cat-item cat-item-6"><a href="../category/announcement/index.html">Announcement</a>
-                        </li>
-                        <li class="cat-item cat-item-4"><a href="../category/behind-the-scenes/index.html">Behind the
-                            scenes</a>
-                        </li>
-                        <li class="cat-item cat-item-5"><a href="../category/news/index.html">News</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </aside>
-            <!-- /#sidebar -->
-
-
-        </div>
-        <!-- /layout-container -->
-
-
-    </div>
-    <!-- /body -->
-
-    <div id="footerwrap">
-
-
-        <footer id="footer" class="pagewidth clearfix" itemscope="itemscope" itemtype="../schema.org/WPFooter">
-
-
-            <div class="back-top clearfix">
-                <div class="arrow-up">
-                    <a href="#header"></a>
-                </div>
-            </div>
-
-            <div class="main-col first clearfix">
-                <div class="footer-left-wrap first">
-
-                    <div class="social-widget">
-                        <div id="themify-social-links-2" class="widget themify-social-links">
-                            <ul class="social-links horizontal">
-                                <li class="social-link-item twitter font-icon icon-large">
-                                    <a href="../twitter.com/TEDxAlamitosBay" target="_blank"><i
-                                            class="fa fa-twitter"></i> </a>
-                                </li>
-                                <!-- /themify-link-item -->
-                                <li class="social-link-item facebook font-icon icon-large">
-                                    <a href="../www.facebook.com/groups/304636813305802/" target="_blank"><i
-                                            class="fa fa-facebook"></i> </a>
-                                </li>
-                                <!-- /themify-link-item --></ul>
-                        </div>
-                    </div>
-                    <!-- /.social-widget -->
-                </div>
-
-                <div class="footer-right-wrap">
-
-                    <div class="footer-nav-wrap">
-                    </div>
-                    <!-- /.footer-nav-wrap -->
-                    <div class="footer-text clearfix">
-                        <div class="footer-text-inner">
-                            <div class="one">&copy; <a href="../index.html">TEDxYouth@AlamitosBay</a> 2019</div>
-                            <div class="two">"This independent TEDx event is operated under license from TED." Parallax
-                                Theme by Daniel Hayase
+                        <div class="back-top clearfix">
+                            <div class="arrow-up">
+                                <a href="#header"></a>
                             </div>
                         </div>
-                    </div>
-                    <!-- /.footer-text -->
+
+                        <div class="main-col first clearfix">
+                            <div class="footer-left-wrap first">
+
+                                <div class="social-widget">
+                                    <div id="themify-social-links-2" class="widget themify-social-links">
+                                        <ul class="social-links horizontal">
+                                            <li class="social-link-item twitter font-icon icon-large">
+                                                <a href="../twitter.com/TEDxAlamitosBay" target="_blank"><i
+                                                        class="fa fa-twitter"></i> </a>
+                                            </li>
+                                            <!-- /themify-link-item -->
+                                            <li class="social-link-item facebook font-icon icon-large">
+                                                <a href="../www.facebook.com/groups/304636813305802/" target="_blank"><i
+                                                        class="fa fa-facebook"></i> </a>
+                                            </li>
+                                            <!-- /themify-link-item --></ul>
+                                    </div>
+                                </div>
+                                <!-- /.social-widget -->
+                            </div>
+
+                            <div class="footer-right-wrap">
+
+                                <div class="footer-nav-wrap">
+                                </div>
+                                <!-- /.footer-nav-wrap -->
+                                <div class="footer-text clearfix">
+                                    <div class="footer-text-inner">
+                                        <div class="one">&copy; <a href="../index.html">TEDxYouth@AlamitosBay</a> 2019
+                                        </div>
+                                        <div class="two">"This independent TEDx event is operated under license from
+                                            TED." Parallax
+                                            Theme by Daniel Hayase
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.footer-text -->
+                            </div>
+                        </div>
+
+                        <div class="section-col clearfix">
+                            <div class="footer-widgets-wrap">
+                                <!-- /footer-widgets -->
+                            </div>
+                        </div>
+
+
+                    </footer>
+                    <!-- /#footer -->
+
+
                 </div>
+                <!-- /#footerwrap -->
+
+            </div>
+            <!-- /#pagewrap -->
+
+
+            <!-- SCHEMA BEGIN -->
+            <script type="application/ld+json">[
+                {
+                    "@context": "http:\/\/schema.org",
+                    "@type": "BlogPosting",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "http:\/\/www.tedxyouthalamitosbay.com\/second-doesnt-mean-second-best\/"
+                    },
+                    "headline": "Second Doesn&#8217;t Mean Second-Best",
+                    "datePublished": "2017-01-23T13:31:05-08:00",
+                    "dateModified": "2017-01-23T13:31:05-08:00",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Daniel Hayase"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "",
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "description": "Our second in-person meeting for TEDxYouth@AlamitosBay was held January 22, 2017 at the Bayshore Library. Despite the rain (and flash flood warning!), everyone laughed and participated, making this the best meeting yet! Between the Chinese New Year cookies, the laughter, and discussion between speakers and TEDx team members, amazing progress was made. Make sure to [&hellip;]",
+                    "commentCount": "0",
+                    "image": {
+                        "@type": "ImageObject",
+                        "url": "https:\/\/i1.wp.com\/www.tedxyouthalamitosbay.com\/wp-content\/uploads\/2017\/01\/1.22.17-pic-4.jpg?fit=1024%2C682",
+                        "width": 1024,
+                        "height": 682
+                    }
+                }
+            ]</script><!-- /SCHEMA END -->        <!-- wp_footer -->
+            <div style="display:none">
             </div>
 
-            <div class="section-col clearfix">
-                <div class="footer-widgets-wrap">
-                    <!-- /footer-widgets -->
-                </div>
-            </div>
 
+            <script type='text/javascript'>
+                /* <![CDATA[ */
+                var themify_vars = {
+                    "version": "3.1.1",
+                    "url": "..\/wp-content\/themes\/themify-ultra\/themify",
+                    "map_key": "AIzaSyBg0ne3qbD5QJjlONYAKRNdH-nJPTZk1Gk"
+                };
+                var themify_vars = {
+                    "version": "3.1.1",
+                    "url": "http:\/\/www.tedxyouthalamitosbay.com\../5QJjlONYAKRNdH-nJPTZk1Gk",
+                    "includesURL": "../\/wp-includes\/",
+                    "isCached": "on"
+                };
+                var tbLocalScript = {
+                    "isAnimationActive": "1",
+                    "isParallaxActive": "1",
+                    "isParallaxScrollActive": "1",
+                    "animationInviewSelectors": [".module.wow", ".themify_builder_content .themify_builder_row.wow", ".module_row.wow", ".builder-posts-wrap > .post.wow"],
+                    "backgroundSlider": {"autoplay": 5000, "speed": 2000},
+                    "animationOffset": "100",
+                    "videoPoster": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/themify\/themify-builder\/img\/blank.png",
+                    "backgroundVideoLoop": "yes",
+                    "builder_url": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/themify\/themify-builder",
+                    "framework_url": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/themify",
+                    "version": "3.1.1",
+                    "fullwidth_support": "1",
+                    "fullwidth_container": "body",
+                    "loadScrollHighlight": "1",
+                    "addons": []
+                };
+                var themifyScript = {
+                    "lightbox": {
+                        "lightboxSelector": ".themify_lightbox",
+                        "lightboxOn": true,
+                        "lightboxContentImages": false,
+                        "lightboxContentImagesSelector": "",
+                        "theme": "pp_default",
+                        "social_tools": false,
+                        "allow_resize": true,
+                        "show_title": false,
+                        "overlay_gallery": false,
+                        "screenWidthNoLightbox": 600,
+                        "deeplinking": false,
+                        "contentImagesAreas": "",
+                        "gallerySelector": ".gallery-icon > a",
+                        "lightboxGalleryOn": true
+                    }, "lightboxContext": "body"
+                };
+                var tbScrollHighlight = {
+                    "fixedHeaderSelector": "#headerwrap.fixed-header",
+                    "speed": "900",
+                    "navigation": "#main-nav",
+                    "scrollOffset": "-5"
+                };
+                /* ]]> */
+            </script>
+            <script type='text/javascript'
+                    src='../wp-content/themes/themify-ultra/themify/js/mainb12b.js?ver=3.1.1'></script>
+            <script type='text/javascript'
+                    src='../wp-content/plugins/jetpack/modules/photon/photonb3d9.js?ver=20130122'></script>
+            <script type='text/javascript'
+                    src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
+            <script type='text/javascript'>
+                /* <![CDATA[ */
+                var _wpcf7 = {
+                    "recaptcha": {"messages": {"empty": "Please verify that you are not a robot."}},
+                    "cached": "1"
+                };
+                /* ]]> */
+            </script>
+            <script type='text/javascript'
+                    src='../wp-content/plugins/contact-form-7/includes/js/scripts4906.js?ver=4.7'></script>
+            <script type='text/javascript' src='../s0.wp.com/wp-content/js/devicepx-jetpack2f22.js?ver=201951'></script>
+            <script type='text/javascript' src='../s.gravatar.com/js/gprofiles8495.js?ver=2019Decaa'></script>
+            <script type='text/javascript'>
+                /* <![CDATA[ */
+                var WPGroHo = {"my_hash": ""};
+                /* ]]> */
+            </script>
+            <script type='text/javascript'
+                    src='../wp-content/plugins/jetpack/modules/wpgroho6619.js?ver=5.2.5'></script>
+            <script type='text/javascript' src='../wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
+            <script type='text/javascript'
+                    src='../wp-content/themes/themify-ultra/themify/js/themify.sidemenuba3a.js?ver=1.7.2'></script>
+            <script type='text/javascript'>
+                /* <![CDATA[ */
+                var themifyScript = {
+                    "themeURI": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra",
+                    "lightbox": {
+                        "lightboxSelector": ".themify_lightbox",
+                        "lightboxOn": true,
+                        "lightboxContentImages": false,
+                        "lightboxContentImagesSelector": "",
+                        "theme": "pp_default",
+                        "social_tools": false,
+                        "allow_resize": true,
+                        "show_title": false,
+                        "overlay_gallery": false,
+                        "screenWidthNoLightbox": 600,
+                        "deeplinking": false,
+                        "contentImagesAreas": "",
+                        "gallerySelector": ".gallery-icon > a",
+                        "lightboxGalleryOn": true
+                    },
+                    "lightboxContext": "#pagewrap",
+                    "fixedHeader": "fixed-header",
+                    "sticky_header": "",
+                    "ajax_nonce": "28967270b2",
+                    "ajax_url": "http:\/\/www.tedxyouthalamitosbay.com\/wp-admin\/admin-ajax.php",
+                    "smallScreen": "760",
+                    "resizeRefresh": "250",
+                    "parallaxHeader": "1",
+                    "loadingImg": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/images\/loading.gif",
+                    "maxPages": "0",
+                    "autoInfinite": "auto",
+                    "scrollToNewOnLoad": "scroll",
+                    "resetFilterOnLoad": "reset",
+                    "fullPageScroll": "",
+                    "shop_masonry": "no",
+                    "scrollHighlight": {"scroll": "internal"},
+                    "tiledata": {
+                        "grids": {
+                            "post": {
+                                "1": ["AAAA"],
+                                "2": ["BBCC", "BBCC"],
+                                "3": ["DD.."],
+                                "4": [".EEF", ".EEF"],
+                                "5": ["DD..", "BBCC", "BBCC"],
+                                "6": [".EEF", ".EEF", "BBCC", "BBCC"],
+                                "7": [".EEF", ".EEF", "DD.."],
+                                "8": [".EEF", ".EEF", "DD..", "AAAA"],
+                                "9": [".EEF", ".EEF", "DD..", "BBCC", "BBCC"],
+                                "10": [".EEF", ".EEF", "DD..", "MMNN", "MMPP"],
+                                "11": [".EEF", ".EEF", "DD..", "MMNN", "MMPP", "AAAA"],
+                                "12": [".EEF", ".EEF", "DD..", "MMNN", "MMPP", "BBCC", "BBCC"],
+                                "13": [".EEF", ".EEF", "DD..", "MMNN", "MMPP", "LSRR", "LSRR"]
+                            }, "mobile": ["AA", ".."]
+                        },
+                        "default_grid": "post",
+                        "small_screen_grid": "mobile",
+                        "breakpoint": 800,
+                        "padding": 5,
+                        "full_width": false,
+                        "animate_init": false,
+                        "animate_resize": true,
+                        "animate_template": false
+                    }
+                };
+                /* ]]> */
+            </script>
+            <script type='text/javascript'
+                    src='../wp-content/themes/themify-ultra/js/themify.scriptba3a.js?ver=1.7.2'></script>
+            <script type='text/javascript' src='../wp-includes/js/comment-reply.min6619.js?ver=5.2.5'></script>
+            <script type='text/javascript' src='../wp-includes/js/wp-embed.min6619.js?ver=5.2.5'></script>
+            <script type='text/javascript' src='../stats.wp.com/e-201951.js' async defer></script>
+            <script type='text/javascript'>
+                _stq = window._stq || [];
+                _stq.push(['view', {
+                    v: 'ext',
+                    j: '1:4.7.1',
+                    blog: '118448529',
+                    post: '551',
+                    tz: '-8',
+                    srv: 'www.tedxyouthalamitosbay.com'
+                }]);
+                _stq.push(['clickTrackerInit', '118448529', '551']);
+            </script>
+            </body>
 
-        </footer>
-        <!-- /#footer -->
-
-
-    </div>
-    <!-- /#footerwrap -->
-
-</div>
-<!-- /#pagewrap -->
-
-
-<!-- SCHEMA BEGIN -->
-<script type="application/ld+json">[
-    {
-        "@context": "http:\/\/schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http:\/\/www.tedxyouthalamitosbay.com\/second-doesnt-mean-second-best\/"
-        },
-        "headline": "Second Doesn&#8217;t Mean Second-Best",
-        "datePublished": "2017-01-23T13:31:05-08:00",
-        "dateModified": "2017-01-23T13:31:05-08:00",
-        "author": {
-            "@type": "Person",
-            "name": "Daniel Hayase"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "",
-                "width": 0,
-                "height": 0
-            }
-        },
-        "description": "Our second in-person meeting for TEDxYouth@AlamitosBay was held January 22, 2017 at the Bayshore Library. Despite the rain (and flash flood warning!), everyone laughed and participated, making this the best meeting yet! Between the Chinese New Year cookies, the laughter, and discussion between speakers and TEDx team members, amazing progress was made. Make sure to [&hellip;]",
-        "commentCount": "0",
-        "image": {
-            "@type": "ImageObject",
-            "url": "https:\/\/i1.wp.com\/www.tedxyouthalamitosbay.com\/wp-content\/uploads\/2017\/01\/1.22.17-pic-4.jpg?fit=1024%2C682",
-            "width": 1024,
-            "height": 682
-        }
-    }
-]</script><!-- /SCHEMA END -->        <!-- wp_footer -->
-<div style="display:none">
-</div>
-
-
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var themify_vars = {
-        "version": "3.1.1",
-        "url": "..\/wp-content\/themes\/themify-ultra\/themify",
-        "map_key": "AIzaSyBg0ne3qbD5QJjlONYAKRNdH-nJPTZk1Gk"
-    };
-    var themify_vars = {
-        "version": "3.1.1",
-        "url": "http:\/\/www.tedxyouthalamitosbay.com\../5QJjlONYAKRNdH-nJPTZk1Gk",
-        "includesURL": "../\/wp-includes\/",
-        "isCached": "on"
-    };
-    var tbLocalScript = {
-        "isAnimationActive": "1",
-        "isParallaxActive": "1",
-        "isParallaxScrollActive": "1",
-        "animationInviewSelectors": [".module.wow", ".themify_builder_content .themify_builder_row.wow", ".module_row.wow", ".builder-posts-wrap > .post.wow"],
-        "backgroundSlider": {"autoplay": 5000, "speed": 2000},
-        "animationOffset": "100",
-        "videoPoster": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/themify\/themify-builder\/img\/blank.png",
-        "backgroundVideoLoop": "yes",
-        "builder_url": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/themify\/themify-builder",
-        "framework_url": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/themify",
-        "version": "3.1.1",
-        "fullwidth_support": "1",
-        "fullwidth_container": "body",
-        "loadScrollHighlight": "1",
-        "addons": []
-    };
-    var themifyScript = {
-        "lightbox": {
-            "lightboxSelector": ".themify_lightbox",
-            "lightboxOn": true,
-            "lightboxContentImages": false,
-            "lightboxContentImagesSelector": "",
-            "theme": "pp_default",
-            "social_tools": false,
-            "allow_resize": true,
-            "show_title": false,
-            "overlay_gallery": false,
-            "screenWidthNoLightbox": 600,
-            "deeplinking": false,
-            "contentImagesAreas": "",
-            "gallerySelector": ".gallery-icon > a",
-            "lightboxGalleryOn": true
-        }, "lightboxContext": "body"
-    };
-    var tbScrollHighlight = {
-        "fixedHeaderSelector": "#headerwrap.fixed-header",
-        "speed": "900",
-        "navigation": "#main-nav",
-        "scrollOffset": "-5"
-    };
-    /* ]]> */
-</script>
-<script type='text/javascript' src='../wp-content/themes/themify-ultra/themify/js/mainb12b.js?ver=3.1.1'></script>
-<script type='text/javascript' src='../wp-content/plugins/jetpack/modules/photon/photonb3d9.js?ver=20130122'></script>
-<script type='text/javascript'
-        src='../wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var _wpcf7 = {"recaptcha": {"messages": {"empty": "Please verify that you are not a robot."}}, "cached": "1"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts4906.js?ver=4.7'></script>
-<script type='text/javascript' src='../s0.wp.com/wp-content/js/devicepx-jetpack2f22.js?ver=201951'></script>
-<script type='text/javascript' src='../s.gravatar.com/js/gprofiles8495.js?ver=2019Decaa'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var WPGroHo = {"my_hash": ""};
-    /* ]]> */
-</script>
-<script type='text/javascript' src='../wp-content/plugins/jetpack/modules/wpgroho6619.js?ver=5.2.5'></script>
-<script type='text/javascript' src='../wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
-<script type='text/javascript'
-        src='../wp-content/themes/themify-ultra/themify/js/themify.sidemenuba3a.js?ver=1.7.2'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var themifyScript = {
-        "themeURI": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra",
-        "lightbox": {
-            "lightboxSelector": ".themify_lightbox",
-            "lightboxOn": true,
-            "lightboxContentImages": false,
-            "lightboxContentImagesSelector": "",
-            "theme": "pp_default",
-            "social_tools": false,
-            "allow_resize": true,
-            "show_title": false,
-            "overlay_gallery": false,
-            "screenWidthNoLightbox": 600,
-            "deeplinking": false,
-            "contentImagesAreas": "",
-            "gallerySelector": ".gallery-icon > a",
-            "lightboxGalleryOn": true
-        },
-        "lightboxContext": "#pagewrap",
-        "fixedHeader": "fixed-header",
-        "sticky_header": "",
-        "ajax_nonce": "28967270b2",
-        "ajax_url": "http:\/\/www.tedxyouthalamitosbay.com\/wp-admin\/admin-ajax.php",
-        "smallScreen": "760",
-        "resizeRefresh": "250",
-        "parallaxHeader": "1",
-        "loadingImg": "http:\/\/www.tedxyouthalamitosbay.com\/wp-content\/themes\/themify-ultra\/images\/loading.gif",
-        "maxPages": "0",
-        "autoInfinite": "auto",
-        "scrollToNewOnLoad": "scroll",
-        "resetFilterOnLoad": "reset",
-        "fullPageScroll": "",
-        "shop_masonry": "no",
-        "scrollHighlight": {"scroll": "internal"},
-        "tiledata": {
-            "grids": {
-                "post": {
-                    "1": ["AAAA"],
-                    "2": ["BBCC", "BBCC"],
-                    "3": ["DD.."],
-                    "4": [".EEF", ".EEF"],
-                    "5": ["DD..", "BBCC", "BBCC"],
-                    "6": [".EEF", ".EEF", "BBCC", "BBCC"],
-                    "7": [".EEF", ".EEF", "DD.."],
-                    "8": [".EEF", ".EEF", "DD..", "AAAA"],
-                    "9": [".EEF", ".EEF", "DD..", "BBCC", "BBCC"],
-                    "10": [".EEF", ".EEF", "DD..", "MMNN", "MMPP"],
-                    "11": [".EEF", ".EEF", "DD..", "MMNN", "MMPP", "AAAA"],
-                    "12": [".EEF", ".EEF", "DD..", "MMNN", "MMPP", "BBCC", "BBCC"],
-                    "13": [".EEF", ".EEF", "DD..", "MMNN", "MMPP", "LSRR", "LSRR"]
-                }, "mobile": ["AA", ".."]
-            },
-            "default_grid": "post",
-            "small_screen_grid": "mobile",
-            "breakpoint": 800,
-            "padding": 5,
-            "full_width": false,
-            "animate_init": false,
-            "animate_resize": true,
-            "animate_template": false
-        }
-    };
-    /* ]]> */
-</script>
-<script type='text/javascript' src='../wp-content/themes/themify-ultra/js/themify.scriptba3a.js?ver=1.7.2'></script>
-<script type='text/javascript' src='../wp-includes/js/comment-reply.min6619.js?ver=5.2.5'></script>
-<script type='text/javascript' src='../wp-includes/js/wp-embed.min6619.js?ver=5.2.5'></script>
-<script type='text/javascript' src='../stats.wp.com/e-201951.js' async defer></script>
-<script type='text/javascript'>
-    _stq = window._stq || [];
-    _stq.push(['view', {
-        v: 'ext',
-        j: '1:4.7.1',
-        blog: '118448529',
-        post: '551',
-        tz: '-8',
-        srv: 'www.tedxyouthalamitosbay.com'
-    }]);
-    _stq.push(['clickTrackerInit', '118448529', '551']);
-</script>
-</body>
-
-<!-- Mirrored from www.tedxyouthalamitosbay.com/second-doesnt-mean-second-best/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 20:33:26 GMT -->
+            <!-- Mirrored from www.tedxyouthalamitosbay.com/second-doesnt-mean-second-best/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 20:33:26 GMT -->
 </html>
 
 <!-- Cache Enabler by KeyCDN @ 22.12.2019 08:27:06 (html) -->
