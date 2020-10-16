@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="45f0f79e-25e8-4edb-9a70-96a2ecfa951c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/photos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/photos/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/second-doesnt-mean-second-best/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/second-doesnt-mean-second-best/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sss/sss.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/sss/sss.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/speakers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/speakers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/team/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tedxyouthalamitosbay-2017/team/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,7 @@
       <updated>1602099709173</updated>
       <workItem from="1602099711604" duration="3152000" />
       <workItem from="1602531940251" duration="2776000" />
+      <workItem from="1602883083486" duration="452000" />
     </task>
     <servers />
   </component>
