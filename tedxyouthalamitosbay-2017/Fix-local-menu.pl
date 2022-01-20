@@ -44,11 +44,11 @@ sub fix {
     close FH;
 
 
-    my $from = q{http:\/\/tedxyouth\.wpengine\.com\/contact};
+    my $from = q{https:\/\/tedxyouth\.wpengine\.com\/contact};
     my $to   = q{../contact/index.html};
     $html =~ s/$from/$to/;
 
-    my $from = q{http:\/\/tedxyouth\.wpengine\.com\/#eventinformation};
+    my $from = q{https:\/\/tedxyouth\.wpengine\.com\/#eventinformation};
     my $to   = q{../event/index.html};
     $html =~ s/$from/$to/;
 

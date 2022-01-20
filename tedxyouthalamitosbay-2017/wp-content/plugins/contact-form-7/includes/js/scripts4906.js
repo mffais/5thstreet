@@ -328,7 +328,7 @@
 			// check the scheme part
 			if ( val && ! val.match( /^[a-z][a-z0-9.+-]*:/i ) ) {
 				val = val.replace( /^\/+/, '' );
-				val = 'http://' + val;
+				val = 'https://' + val;
 			}
 
 			$( this ).val( val );

@@ -48,7 +48,7 @@ sub fix {
     my $to   = q{<script type='text/javascript' src='https://stats.wp.com/e-202035.js' async defer></script>};
     $html =~ s/$from/$to/;
 
-    my $from = q{http:\\\\/\\\\/www\.vintagepointsblog\.com\\\\/wp-includes\\\\/js\\\\/wp-emoji-release\.min\.js\?ver=5\.4\.2};
+    my $from = q{https:\\\\/\\\\/www\.vintagepointsblog\.com\\\\/wp-includes\\\\/js\\\\/wp-emoji-release\.min\.js\?ver=5\.4\.2};
     my $to   = q{wp-includes\\/js\\/wp-emoji-release.min.js?ver=5.4.2};
     $html =~ s/$from/$to/;
 

@@ -16,9 +16,9 @@ function sendRequest(url,callback,postData) {
     
     var protocol = location.protocol;
     if (protocol === 'https:') {
-        url = url.replace('http:', 'https:');
+        url = url.replace('https:', 'https:');
     } else {
-        url = url.replace('https:', 'http:');
+        url = url.replace('https:', 'https:');
     }
     
     req.open(method,url,true);
@@ -189,7 +189,7 @@ if(ct_nocache_executed==undefined)
 		cleantalk_user_info.is_flash=flashInstalled;
 		
 		isVisitedMain=-1;
-		if(location.href=='http://'+location.hostname+'/' || location.href=='https://'+location.hostname+'/')
+		if(location.href=='https://'+location.hostname+'/' || location.href=='https://'+location.hostname+'/')
 		{
 			isVisitedMain=1;
 			setTimeout(function() { document.cookie = "ct_visited_main = 1; path = /;"}, 1500);
